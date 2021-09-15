@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="surveyStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="texto">
+        <h1 id="title">Encuesta Facultad de Ingenieria</h1>
+        <p id="description">
+            Breve encuesta sobre metodos de estudio para alumnos de la FIUBA.
+        </p>
+    </div>
+    <form id="survey-form" action="">
+        <div class="container">
+            <label for="name" id="name-label" class="bold">
+                Nombre
+            </label>
+            <input id="name" type="text" placeholder="Ingresa tu Nombre" required/>
+            <label for="email" id="email-label" class="bold">
+                Email
+            </label>
+            <input id="email" type="email" placeholder="Ingresa tu Email" required/>
+            <label for="number" id="number-label" class="bold">
+                Edad
+            </label>
+            <input id="number" type="number" placeholder="Ingresa tu edad" min="0" max="100" required/>
+            <label for="dropdown" class="bold">
+                Selecciona tu carrera
+            </label>
+            <div id="select">                
+                <select name="Ingenierias" id="dropdown">
+                    <option value="" disabled selected hidden>Elegí tu carrera</option>
+                    <option value="civil">Ingenieria Civil</option>
+                    <option value="alimentos">Ingenieria en Alimentos</option>
+                    <option value="agrimensura">Ingenieria en Agrimensura</option>
+                    <option value="informatica">Ingenieria en Informatica</option>
+                    <option value="electricista">Ingenieria Electricista</option>
+                    <option value="electronica">Ingenieria Electronica</option>
+                    <option value="petroleo">Ingenieria en Petroleo</option>
+                    <option value="industrial">Ingenieria Industrial</option>
+                    <option value="mecanica">Ingenieria Mecanica</option>
+                    <option value="naval">Ingenieria Naval</option>
+                    <option value="quimica">Ingenieria Quimica</option>
+                    <option value="sistemas">Licenciatura en Sistemas</option>
+                    <option value="otra">Otro</option>
+                </select>
+            </div>
+            <div class="bold">                
+                ¿En que cuatrimestre estas?
+            </div>
+            <div class="opciones">                
+                <input class="column" type="radio" name="cuatrimestre" value="pri" id="pri"><label for="pri">Primer</label> <!-- radio -->
+                <input type="radio" name="cuatrimestre" id="seg" value="seg"><label for="seg">Segundo</label> <!-- radio -->
+                <input type="radio" name="cuatrimestre" id="ter" value="ter"><label for="ter">Tercero</label> <!-- radio -->
+                <input type="radio" name="cuatrimestre" id="cua" value="cua"><label for="cua">Cuarto</label> <!-- radio -->
+                <input type="radio" name="cuatrimestre" id="qui" value="qui"><label for="qui">Quinto</label> <!-- radio -->
+                <input type="radio" name="cuatrimestre" id="sex" value="sex"><label for="sex">Sexto</label> <!-- radio -->
+                <input type="radio" name="cuatrimestre" id="sep" value="sep"><label for="sep">Septimo</label> <!-- radio -->
+                <input type="radio" name="cuatrimestre" id="oct" value="oct"><label for="oct">Octavo</label> <!-- radio -->
+                <input type="radio" name="cuatrimestre" id="nov" value="nov"><label for="nov">Noveno</label> <!-- radio -->
+                <input type="radio" name="cuatrimestre" id="dec" value="dec"><label for="dec">Decimo</label> <!-- radio -->
+                <input type="radio" name="cuatrimestre" id="dec+" value="dec+"><label for="dec+">Onceavo en adelante</label> <!-- radio -->
+            </div>
+            <!-- Checkbox -->
+            <div class="bold">
+                ¿De donde estudias? Podes seleccionar mas de uno:
+            </div>
+            <div class="opciones">                
+                <input type="checkbox" name="estudio" value="apu" id="apuntes"><label for="apuntes">Apuntes propios de clase</label>
+                <input type="checkbox" name="estudio" value="bib" id="bibliografia"><label for="bibliografia">Bibliografia recomendada para la catedra</label>
+                <input type="checkbox" name="estudio" value="lib" id="libros"><label for="libros">Libros que no estén en la catedra</label>
+                <input type="checkbox" name="estudio" value="int" id="internet"><label for="internet">Material de internet (videos, resumenes)</label>
+                <input type="checkbox" name="estudio" value="ter" id="terceros"><label for="terceros">Apuntes de compañeros, profesores particulares, etc.</label>
+            </div>
+            <!-- Text area -->
+            <label for="textarea" class="bold">
+                Comentarios
+            </label>
+            <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+            <!-- Submit  -->
+            <button type="submit" class="bold" id="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>

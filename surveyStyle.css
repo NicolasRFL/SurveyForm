@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+
+    box-sizing: border-box;
+    font-size: larger;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(150, 150, 231, 0.5),
+        rgba(220, 220, 240, 0.3)
+      ),url(facIng.jpg);
+    background-position: center;
+
+    /* Make the background image cover the area of the <div>, and clip the excess */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding-bottom:10vh;
+    padding-top:10vh;
+}
+
+
+
+.container{
+    display:grid;    
+    grid-template-columns: auto;
+    grid-gap: 0.3em 0.6em;
+    grid-auto-flow: dense;
+    align-items: center;
+    min-width: 56vw;
+}
+
+.opciones{
+    display:grid;
+    grid-template-columns: 3% auto;
+    margin-bottom: 2vh;
+}
+
+.container{
+    padding:4vh 2vw 4vh 2vw;
+    background:rgb(90,160,160,0.9);
+}
+
+#texto{
+    background-color:rgb(70,130,180,0.9);
+    min-width:60vw;
+    text-align: center;
+}
+
+#select{
+    margin-bottom:2vh;
+}
+
+input{
+    margin-bottom:2vh;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#submit{
+    width: 100%;
+    padding: 0.75rem;
+    background-color: steelblue;
+    cursor: pointer;
+    font-size: larger;
+}
+
+#submit:hover{
+    background-color:green;
+}
